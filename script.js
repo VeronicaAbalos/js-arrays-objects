@@ -37,10 +37,8 @@ let person = {
 output.innerHTML += "<h3>Object:</h3>";
 output.innerHTML += "Name: " + person.name + "<br>";
 
-// modify using dot notation
 person.age = 25;
 
-// modify using bracket notation
 person["city"] = "Los Angeles";
 
 output.innerHTML += "Updated Age: " + person.age + "<br>";
@@ -53,18 +51,15 @@ output.innerHTML += "Updated City: " + person.city + "<br><br>";
 
 let numbers = [1, 2, 3, 4, 5];
 
-// forEach
 output.innerHTML += "<h3>forEach:</h3>";
 numbers.forEach(num => {
     output.innerHTML += num + " ";
 });
 output.innerHTML += "<br>";
 
-// map
 let doubled = numbers.map(num => num * 2);
 output.innerHTML += "Mapped (x2): " + doubled + "<br>";
 
-// filter
 let filtered = numbers.filter(num => num > 2);
 output.innerHTML += "Filtered (>2): " + filtered + "<br><br>";
 
